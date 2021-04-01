@@ -12,7 +12,7 @@
       <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
@@ -42,7 +42,7 @@
 
     <section class="program">
       <h2 class="visually-hidden">Программы питания</h2>
-      <ul class="program__list program__wrapper">
+      <ul class="program__list">
         <li class="program__item">
           <h3 class="program__title">Похудение</h3>
           <p class="program__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
@@ -87,22 +87,24 @@
         <p class="example-work__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
           Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
           16 часов в день.</p>
-        <div class="example-module__wrapper">
-          <div class="example-work__module">
-            <p class="example-work__number">5 кг</p>
-            <p class="example-work__description">снижение веса</p>
-          </div>
-          <div class="example-work__module">
-            <p class="example-work__number">60 дней</p>
-            <p class="example-work__description">затрачено времени</p>
+        <div class="example-module">
+          <div class="example-module__wrapper">
+            <div class="example-work__module">
+              <p class="example-work__number">5 кг</p>
+              <p class="example-work__description">снижение веса</p>
+            </div>
+            <div class="example-work__module">
+              <p class="example-work__number">60 дней</p>
+              <p class="example-work__description">затрачено времени</p>
+            </div>
           </div>
         </div>
         <p class="example-work__subtitle">Затраты на питание 15 000 руб.</p>
         <img class="example-work__image" src="../img/boris-fat.png" width="311" height="232" alt="Толстый Борис">
         <img class="example-work__image" src="../img/boris-slim.png" width="251" height="240" alt="Стройный Борис">
-        <div class="example-work__switch__wrapper">
-          <button class="example-work__switch example-work__switch--befor">было</button>
-          <button class="example-work__switch example-work__switch--after">стало</button>
+        <div class="example-work__switch-wrapper">
+          <button class="example-work__switch example-work__switch--befor" type="button">было</button>
+          <button class="example-work__switch example-work__switch--after" type="button">стало</button>
         </div>
       </div>
     </section>
@@ -116,15 +118,16 @@
         <div class="contacts__wrapper">
           <h3 class="visually-hidden">Контакты</h3>
           <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__adres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
       </section>
 
       <section class="map">
         <div class="map__wrapper">
           <h3 class="visually-hidden">Карта</h3>
-          <img class="map__image" src="../img/map.svg" width="320" height="368" alt="Карта, ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-          <img class="map-marker" src="../img/map-marker.svg" width="57" height="53" alt="Маркер на карте">
+          <img class="map__image" src="../img/map.svg" width="320" height="368"
+            alt="Карта, ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <img class="map__marker" src="../img/map-marker.svg" width="57" height="53" alt="Маркер на карте">
         </div>
       </section>
 
@@ -134,23 +137,28 @@
 
       <ul class="footer-social">
         <li class="footer-social__link footer-social__link-vk" href="#">
-          <img class="footer-social__image footer-social__image-vk" src="../img/footer-vk.svg" width="23" height="16" alt="Логотип ВКонтакте">
+          <img class="footer-social__image footer-social__image-vk" src="../img/footer-vk.svg" width="23" height="16"
+            alt="Логотип ВКонтакте">
         </li>
         <li class="footer-social__link footer-social__link-insta" href="#">
-          <img class="footer-social__image footer-social__image-insta" src="../img/footer-inst.svg" width="16" height="16" alt="Логотип Инстаграм">
+          <img class="footer-social__image footer-social__image-insta" src="../img/footer-inst.svg" width="16"
+            height="16" alt="Логотип Инстаграм">
         </li>
         <li class="footer-social__link footer-social__link-face" href="#">
-          <img class="footer-social__image footer-social__image-face" src="../img/footer-face.svg" width="22" height="22" alt="Логотип Фейсбук">
+          <img class="footer-social__image footer-social__image-face" src="../img/footer-face.svg" width="22"
+            height="22" alt="Логотип Фейсбук">
         </li>
       </ul>
 
       <div class="footer-academy">
         <p class="footer-academy__text">HTML Academy</p>
         <a class="footer-academy__link-logo" href="#">
-          <img class="footer-academy__logo" src="../img/footer_html.svg" width="27" height="34" alt="Логотип HTMLAcademy">
+          <img class="footer-academy__logo" src="../img/footer_html.svg" width="27" height="34"
+            alt="Логотип HTMLAcademy">
         </a>
       </div>
-    </div>  <!--footer-wrapper-->
+    </div>
+    <!--footer-wrapper-->
   </footer>
 
 </body>
