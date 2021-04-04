@@ -32,10 +32,10 @@
 
   <main class="page-main">
     <form class="page-main__form-user-cat" action="https://echo.htmlacademy.ru" method="get"> <!--global form-->
-      <h1 class="page__tittle">Подбор программы</h1>
       <section class="form-cat">
+        <h1 class="page__tittle">Подбор программы</h1>
+        <p class="form-cat__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <ul class="form-cat__list">
-          <p class="form-cat__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <li class="form-cat_item">
             <label class="form-cat__text" for="cat-name">имя*</label>
             <input class="form-cat__field" id="cat-name" type="text" name="catname" placeholder="Барсик">
@@ -70,8 +70,8 @@
       </section>
 
       <section class="form-user">
+        <h2 class="form-user__tittle">Контактные данные (владельца кота)</h2>
         <ul class="form-user__list">
-          <h2 class="form-user__tittle">Контактные данные (владельца кота)</h2>
           <li class="form-user__item">
             <label class="form-user__text" for="user-email">E-mail:*</label>
             <input class="form-user__field" id="user-email" type="text" name="user-email" placeholder="kuklachev@gmail.com">
@@ -89,6 +89,7 @@
       </section>
 
       <section class="more-nutrition">
+        <h2 class="visually-hidden">Дополнительная инфорамция о питании</h2>
         <ul class="more-nutrition__list">
           <li class="more-nutrition__item">
             <input class="more-nutrition__field" id="sugar-substitute" type="checkbox" name="sugar-substitute">
@@ -141,25 +142,27 @@
       </a>
 
       <ul class="footer-social">
-        <li class="footer-social__link footer-social__link-vk" href="#">
-          <img class="footer-social__image footer-social__image-vk" src="../img/footer-vk.svg" width="23" height="16"
-            alt="Логотип ВКонтакте">
+        <li class="footer-social__item">
+          <a class="footer-social__link footer-social__link-vk" href="#">
+            <img class="footer-social__image footer-social__image-vk" src="../img/footer-vk.svg" width="23" height="16" alt="Логотип ВКонтакте">
+          </a>
         </li>
-        <li class="footer-social__link footer-social__link-insta" href="#">
-          <img class="footer-social__image footer-social__image-insta" src="../img/footer-inst.svg" width="16"
-            height="16" alt="Логотип Инстаграм">
+        <li class="footer-social__item">
+          <a class="footer-social__link footer-social__link-insta" href="#">
+            <img class="footer-social__image footer-social__image-insta" src="../img/footer-inst.svg" width="16" height="16" alt="Логотип Инстаграм">
+          </a>
         </li>
-        <li class="footer-social__link footer-social__link-face" href="#">
-          <img class="footer-social__image footer-social__image-face" src="../img/footer-face.svg" width="22"
-            height="22" alt="Логотип Фейсбук">
+        <li class="footer-social__item">
+          <a  class="footer-social__link footer-social__link-face" href="#">
+            <img class="footer-social__image footer-social__image-face" src="../img/footer-face.svg" width="22" height="22" alt="Логотип Фейсбук">
+          </a>
         </li>
       </ul>
 
       <div class="footer-academy">
         <p class="footer-academy__text">HTML Academy</p>
         <a class="footer-academy__link-logo" href="#">
-          <img class="footer-academy__logo" src="../img/footer_html.svg" width="27" height="34"
-            alt="Логотип HTMLAcademy">
+          <img class="footer-academy__logo" src="../img/footer_html.svg" width="27" height="34" alt="Логотип HTMLAcademy">
         </a>
       </div>
     </div>
