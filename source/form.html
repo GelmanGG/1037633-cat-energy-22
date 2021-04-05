@@ -8,7 +8,7 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo-link">
+    <a class="page-header__logo-link" href="index.html">
       <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи">
     </a>
     <nav class="main-nav">
@@ -17,103 +17,66 @@
       </button>
 
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a class="site-list__link">Главная</a>
+        <li class="site-list__item">
+          <a class="site-list__link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
           <a class="site-list__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Подбор программы</a>
+          <a class="site-list__link site-list__item--active">Подбор программы</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <main class="page-main">
-    <form class="page-main__form-user-cat" action="https://echo.htmlacademy.ru" method="get"> <!--global form-->
-      <section class="form-cat">
-        <h1 class="page__tittle">Подбор программы</h1>
-        <p class="form-cat__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <ul class="form-cat__list">
-          <li class="form-cat_item">
-            <label class="form-cat__text" for="cat-name">имя*</label>
-            <input class="form-cat__field" id="cat-name" type="text" name="catname" placeholder="Барсик">
-          </li>
-          <li class="form-cat_item">
-            <label class="form-cat__text" for="cat-weight">вес(кг)*</label>
-            <input class="form-cat__field" id="cat-weight" type="text" name="cat-weight" placeholder="7">
-          </li>
-          <li class="form-cat__item">
-            <label class="form-cat__text" for="cat-age">Возраст(лет)</label>
-            <input class="form-cat__field" id="cat-age" type="text" name="cat-age" placeholder="7">
-          </li>
-        </ul>
-      </section>
-
-      <section class="program-target">
+    <form class="form-cat" action="https://echo.htmlacademy.ru" method="get" id="form-cat-form">
+      <h1 class="form-cat__up-tittle">Подбор программы</h1>
+      <p class="form-cat__up-subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <fieldset class="form-cat__list" form="form-cat-form">
+        <h2 class="visually-hidden">Данные кота</h2>
+        <label class="form-cat__label" for="cat-name">имя*</label>
+        <input class="form-cat__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик">
+        <label class="form-cat__label" for="cat-weight">вес(кг)*</label>
+        <input class="form-cat__input" id="cat-weight" type="text" name="cat-weight" placeholder="7">
+        <label class="form-cat__label" for="cat-age">Возраст(лет)</label>
+        <input class="form-cat__input" id="cat-age" type="text" name="cat-age" placeholder="7">
+      </fieldset>
+      <fieldset class="form-cat__list" form="form-cat-form">
         <h2 class="visually-hidden">Цель программы питания</h2>
-        <ul class="program-target__list">
-          <li class="program-target__item">
-            <input class="program-target__radio" type="radio" name="radio" id="cat-radio1" checked>
-            <label class="program-target__text" for="cat-radio1">Похудение</label>
-          </li>
-          <li class="program-target__item">
-            <input class="program-target__radio" type="radio" name="radio" id="cat-radio2">
-            <label class="program-target__text" for="cat-radio2">Набор массы</label>
-          </li>
-          <li class="program-target__item">
-            <input class="program-target__radio" type="radio" name="radio" id="cat-radio3">
-            <label class="program-target__text" for="cat-radio3">Не знаю нужен ваш совет</label>
-          </li>
-        </ul>
-      </section>
-
-      <section class="form-user">
-        <h2 class="form-user__tittle">Контактные данные (владельца кота)</h2>
-        <ul class="form-user__list">
-          <li class="form-user__item">
-            <label class="form-user__text" for="user-email">E-mail:*</label>
-            <input class="form-user__field" id="user-email" type="text" name="user-email" placeholder="kuklachev@gmail.com">
-          </li>
-          <li class="form-user__item">
-            <label class="form-user__text" for="user-number">Телефон*</label>
-            <input class="form-user__field" id="user-number" type="text" name="user-number" placeholder="8 (960) 900-60-90">
-          </li>
-        </ul>
-      </section>
-
-      <section class="about-cat">
-        <h2 class="about-cat__tittle">Комментарии</h2>
-        <textarea class="about-cat__field" name="about-cat" rows="5" cols="50" placeholder="Расскажите о повадках кота"></textarea>
-      </section>
-
-      <section class="more-nutrition">
-        <h2 class="visually-hidden">Дополнительная инфорамция о питании</h2>
-        <ul class="more-nutrition__list">
-          <li class="more-nutrition__item">
-            <input class="more-nutrition__field" id="sugar-substitute" type="checkbox" name="sugar-substitute">
-            <label class="more-nutrition__text" for="sugar-substitute">Сахарозаменитель</label>
-          </li>
-          <li class="more-nutrition__item">
-            <input class="more-nutrition__field" id="water" type="checkbox" name="water">
-            <label class="more-nutrition__text" for="water">Питьевая вода</label>
-          </li>
-          <li class="more-nutrition__item">
-            <input class="more-nutrition__field" id="milk" type="checkbox" name="milk">
-            <label class="more-nutrition__text" for="milk">Молоко</label>
-          </li>
-          <li class="more-nutrition__item">
-            <input class="more-nutrition__field" id="vitamins" type="checkbox" name="vitamins">
-            <label class="more-nutrition__text" for="vitamins">Витамины</label>
-          </li>
-        </ul>
-      </section>
-
-      <input class="page-main__form-btn" type="submit" value="Отправить заявку">
-      <p class="">*- обязательные поля</p>
-    </form> <!--global form-->
-
+        <input class="form-cat__radio" type="radio" name="program-selection" value="losing-weight" id="losing-weight" checked>
+        <label class="form-cat__label" for="losing-weight">Похудение</label>
+        <input class="form-cat__radio" type="radio" name="program-selection" value="weight-gain" id="weight-gain">
+        <label class="form-cat__label" for="weight-gain">Набор массы</label>
+        <input class="form-cat__radio" type="radio" name="program-selection" value="dont-know" id="dont-know">
+        <label class="form-cat__label" for="dont-know">Не знаю нужен ваш совет</label>
+      </fieldset>
+      <fieldset class="form-cat__list" form="form-cat-form">
+        <legend class="form-cat__tittle">Контактные данные (владельца кота)</legend>
+        <label class="form-cat__label" for="user-email">E-mail:*</label>
+        <input class="form-cat__input" id="user-email" type="text" name="user-email" placeholder="kuklachev@gmail.com">
+        <label class="form-cat__label" for="user-number">Телефон*</label>
+        <input class="form-cat__input" id="user-number" type="text" name="user-number" placeholder="8 (960) 900-60-90">
+      </fieldset>
+      <fieldset class="form-cat__list" form="form-cat-form">
+        <legend class="form-cat__tittle">Комментарии</legend>
+        <textarea class="form-cat__field" name="about-cat" rows="5" cols="50" placeholder="Расскажите о повадках кота"></textarea>
+      </fieldset>
+      <fieldset class="form-cat__list" form="form-cat-form">
+        <legend class="form-cat__tittle">Дополнительно</legend>
+        <input class="form-cat__checkbox" id="sugar-substitute" type="checkbox" name="sugar-substitute">
+        <label class="form-cat__label" for="sugar-substitute">Сахарозаменитель</label>
+        <input class="form-cat__checkbox" id="water" type="checkbox" name="water">
+        <label class="form-cat__label" for="water">Питьевая вода</label>
+        <input class="form-cat__checkbox" id="milk" type="checkbox" name="milk">
+        <label class="form-cat__label" for="milk">Молоко</label>
+        <input class="form-cat__checkbox" id="vitamins" type="checkbox" name="vitamins">
+        <label class="form-cat__label" for="vitamins">Витамины</label>
+      </fieldset>
+      <button class="form-cat__button" type="submit">Отправить заявку</button>
+      <p class="form-cat__under-button-text">*- обязательные поля</p>
+    </form>
   </main>
 
   <footer class="footer">
@@ -153,7 +116,7 @@
           </a>
         </li>
         <li class="footer-social__item">
-          <a  class="footer-social__link footer-social__link-face" href="#">
+          <a class="footer-social__link footer-social__link-face" href="#">
             <img class="footer-social__image footer-social__image-face" src="../img/footer-face.svg" width="22" height="22" alt="Логотип Фейсбук">
           </a>
         </li>
