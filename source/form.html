@@ -23,8 +23,8 @@
         <li class="site-list__item">
           <a class="site-list__link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link site-list__item--active">Подбор программы</a>
+        <li class="site-list__item site-list__item--active">
+          <a class="site-list__link">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -34,8 +34,8 @@
     <form class="form-cat" action="https://echo.htmlacademy.ru" method="get" id="form-cat-form">
       <h1 class="form-cat__up-tittle">Подбор программы</h1>
       <p class="form-cat__up-subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <fieldset class="form-cat__list" form="form-cat-form">
-        <h2 class="visually-hidden">Данные кота</h2>
+      <fieldset class="form-cat__fieldset" form="form-cat-form">
+        <legend class="visually-hidden">Данные кота</legend>
         <label class="form-cat__label" for="cat-name">имя*</label>
         <input class="form-cat__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик">
         <label class="form-cat__label" for="cat-weight">вес(кг)*</label>
@@ -43,8 +43,8 @@
         <label class="form-cat__label" for="cat-age">Возраст(лет)</label>
         <input class="form-cat__input" id="cat-age" type="text" name="cat-age" placeholder="7">
       </fieldset>
-      <fieldset class="form-cat__list" form="form-cat-form">
-        <h2 class="visually-hidden">Цель программы питания</h2>
+      <fieldset class="form-cat__fieldset" form="form-cat-form">
+        <legend class="visually-hidden">Цель программы питания</legend>
         <input class="form-cat__radio" type="radio" name="program-selection" value="losing-weight" id="losing-weight" checked>
         <label class="form-cat__label" for="losing-weight">Похудение</label>
         <input class="form-cat__radio" type="radio" name="program-selection" value="weight-gain" id="weight-gain">
@@ -52,18 +52,18 @@
         <input class="form-cat__radio" type="radio" name="program-selection" value="dont-know" id="dont-know">
         <label class="form-cat__label" for="dont-know">Не знаю нужен ваш совет</label>
       </fieldset>
-      <fieldset class="form-cat__list" form="form-cat-form">
+      <fieldset class="form-cat__fieldset" form="form-cat-form">
         <legend class="form-cat__tittle">Контактные данные (владельца кота)</legend>
         <label class="form-cat__label" for="user-email">E-mail:*</label>
         <input class="form-cat__input" id="user-email" type="text" name="user-email" placeholder="kuklachev@gmail.com">
         <label class="form-cat__label" for="user-number">Телефон*</label>
         <input class="form-cat__input" id="user-number" type="text" name="user-number" placeholder="8 (960) 900-60-90">
       </fieldset>
-      <fieldset class="form-cat__list" form="form-cat-form">
+      <fieldset class="form-cat__fieldset" form="form-cat-form">
         <legend class="form-cat__tittle">Комментарии</legend>
         <textarea class="form-cat__field" name="about-cat" rows="5" cols="50" placeholder="Расскажите о повадках кота"></textarea>
       </fieldset>
-      <fieldset class="form-cat__list" form="form-cat-form">
+      <fieldset class="form-cat__fieldset" form="form-cat-form">
         <legend class="form-cat__tittle">Дополнительно</legend>
         <input class="form-cat__checkbox" id="sugar-substitute" type="checkbox" name="sugar-substitute">
         <label class="form-cat__label" for="sugar-substitute">Сахарозаменитель</label>
