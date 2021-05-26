@@ -1,0 +1,79 @@
+.footer {
+  background-color: $bg-grey;
+}
+
+.footer__wrapper {
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.footer__logo-link {
+  display: block;
+  padding: 39px 0 27px 0;
+
+  text-align: center;
+
+  border-bottom: 1px solid $line-grey;
+
+  &:hover,
+  &:focus {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+}
+
+.footer__social {
+  border-bottom: 1px solid $line-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    min-height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      /* IE10+ CSS styles go here */
+      padding-top: 30px;
+    }
+  }
+
+  .footer__logo-link {
+    border-bottom: none;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  .footer__social {
+    width: 33%;
+    box-sizing: border-box;
+    max-width: 100%;
+    border-bottom: none;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      /* IE10+ CSS styles go here */
+      padding-top: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__wrapper {
+    min-height: 148px;
+    padding: 0 40px;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      /* IE10+ CSS styles go here */
+      padding-top: 40px;
+    }
+  }
+
+  .footer__logo-link {
+    padding-top: 33px;
+  }
+}

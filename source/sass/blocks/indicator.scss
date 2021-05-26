@@ -1,0 +1,139 @@
+.indicator {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  width: 198px;
+  margin: 0 auto;
+}
+
+.indicator__button {
+  @include font-header;
+  @include font(16px, 20px);
+
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &--after {
+    order: 2;
+  }
+}
+
+.indicator__label {
+  width: 84px;
+  cursor: pointer;
+
+  &::before {
+    @include psevdo(84px, 14px);
+
+    visibility: visible;
+    top: 5px;
+    left: 58px;
+
+    box-sizing: border-box;
+    background-color: $white;
+    border: solid 1px $line-grey;
+    border-radius: 90px;
+  }
+
+  &::after {
+    @include psevdo(35px, 6px);
+
+    visibility: visible;
+    top: 9px;
+    left: 65px;
+
+    box-sizing: border-box;
+    background-color: $bg-green;
+    border-radius: 90px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .indicator {
+    width: auto;
+    padding: 0 68px;
+  }
+
+  .indicator__button {
+    @include font(20px, 20px);
+    position: relative;
+
+    &::after {
+      @include psevdo(100%, 1px);
+
+      top: 26px;
+      left: 0;
+      background-color: $logo-grey;
+      opacity: 23%;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      opacity: 40%;
+    }
+
+    &:active::after {
+      opacity: 0%;
+    }
+  }
+
+  .indicator__label {
+    &::before {
+      left: 50%;
+      top: 10px;
+      width: 428px;
+      height: 6px;
+
+      background-color: $stripe-grey;
+      border: none;
+      transform: translate(-50%);
+    }
+
+    &::after {
+      left: 50%;
+      top: -5px;
+      width: 34px;
+      height: 34px;
+
+      border: 13px solid $white;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px 0 $light-shadow;
+      transform: translateX(-50%);
+    }
+
+    &:hover::after,
+    &:focus::after {
+      box-shadow: 0 3px 5px 0 $middle-shadow;
+    }
+
+    &:active::after {
+      box-shadow: 0 0 0 2px $bg-green, 0 4px 5px 0 $big-shadow;
+      transition: all 0.1s ease;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .indicator {
+    position: relative;
+    top: 501px;
+    left: 40px;
+
+    padding: 0 40px 0 80px;
+  }
+
+  .indicator__label {
+    width: 34px;
+    height: 23px;
+
+    &::before,
+    &::after {
+      left: 53%;
+    }
+  }
+}
